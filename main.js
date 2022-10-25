@@ -6,8 +6,10 @@
 //72 pokemons sexta
 //89 pokemons septima
 //80 pokemons octava
-//Lo suyo seria que se seleccionase la generacion y apareciera la pokedex
+//Lo suyo seria que se seleccionase la generacion y apareciera la pokedex pero haciendolo con la parte de generacion
 //Se pueden poner distintas variables con distintos numeros para empezar a contar
+//1ªForma - importar una variable con el numero del pokemon y pasarselo a otro js donde esta solo una pagina
+//2ªForma -meter en el enlace el numero del pokemon y que cuando se abra la otra pagina se pille el numero del pokemon del enlace
 
 let pokemon;
 let inicio;
@@ -24,19 +26,23 @@ async function pokedex(inicio, limite) {
     dato = await resultado.json();
 
         pokemon=dato;
-
+        console.log(pokemon)
         let datos_pokemon=document.createElement("div");
         
+        //Crear enlace para la pagina
+        let a=document.createElement("a")
+        a.href="only_one.html?id="+inicio
+        datos_pokemon.append(a);
+
         //Creacion de la imagen
         let img=document.createElement("img");
         img.src=(pokemon.sprites.front_default);
-        datos_pokemon.append(img)
+        a.append(img)
 
         //Creacion del nombre
         let p=document.createElement("p");
         p.innerHTML=(pokemon.name);
-        datos_pokemon.append(p)
-
+        a.append(p)
         
         //Meter en el html
         contenedor.appendChild(datos_pokemon);
