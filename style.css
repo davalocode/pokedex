@@ -1,0 +1,23 @@
+span {
+    cursor: pointer;
+}
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenedor div {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contenedor div img {
+    width: 25%;
+}
+
+.contenedor div p {
+    width: 100%;
+}
