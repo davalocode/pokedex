@@ -39,6 +39,11 @@ async function pokedex(inicio, limite) {
         img.src=(pokemon.sprites.front_default);
         a.append(img)
 
+        //Creacion del numero
+        let numero=document.createElement("p");
+        numero.innerHTML=("PokeDex Nº: "+pokemon.id);
+        a.append(numero);
+
         //Creacion del nombre
         let p=document.createElement("p");
         p.innerHTML=(pokemon.name);
@@ -67,6 +72,13 @@ document.getElementById("primera").addEventListener("click", function generate()
     pokedex(inicio, limite);
 })
 
+document.getElementById("primera_2").addEventListener("click", function generate() {
+    borrar();
+    inicio=1;
+    limite=151;
+    pokedex(inicio, limite);
+})
+
 
 //-----------------------------------SEGUNDA GENERACION----------------------------------------
 document.getElementById("segunda").addEventListener("click", function generate() {
@@ -75,6 +87,14 @@ document.getElementById("segunda").addEventListener("click", function generate()
     limite=251;
     pokedex(inicio, limite);
 })
+
+document.getElementById("segunda_2").addEventListener("click", function generate() {
+    borrar();
+    inicio=152;
+    limite=251;
+    pokedex(inicio, limite);
+})
+
 //-----------------------------------TERCERA GENERACION----------------------------------------
 document.getElementById("tercera").addEventListener("click", function generate() {
     borrar();
@@ -82,8 +102,23 @@ document.getElementById("tercera").addEventListener("click", function generate()
     limite=386;
     pokedex(inicio, limite);
 })
+
+document.getElementById("tercera_2").addEventListener("click", function generate() {
+    borrar();
+    inicio=252;
+    limite=386;
+    pokedex(inicio, limite);
+})
+
 //-----------------------------------CUARTA GENERACION----------------------------------------
 document.getElementById("cuarta").addEventListener("click", function generate() {
+    borrar();
+    inicio=387;
+    limite=494;
+    pokedex(inicio, limite);
+})
+
+document.getElementById("cuarta_2").addEventListener("click", function generate() {
     borrar();
     inicio=387;
     limite=494;
@@ -96,6 +131,14 @@ document.getElementById("quinta").addEventListener("click", function generate() 
     limite=651;
     pokedex(inicio, limite);
 })
+
+document.getElementById("quinta_2").addEventListener("click", function generate() {
+    borrar();
+    inicio=495;
+    limite=651;
+    pokedex(inicio, limite);
+})
+
 //-----------------------------------SEXTA GENERACION----------------------------------------
 document.getElementById("sexta").addEventListener("click", function generate() {
     borrar();
@@ -103,6 +146,14 @@ document.getElementById("sexta").addEventListener("click", function generate() {
     limite=723;
     pokedex(inicio, limite);
 })
+
+document.getElementById("sexta_2").addEventListener("click", function generate() {
+    borrar();
+    inicio=650;
+    limite=723;
+    pokedex(inicio, limite);
+})
+
 //-----------------------------------PRIMERA GENERACION----------------------------------------
 document.getElementById("septima").addEventListener("click", function generate() {
     borrar();
@@ -110,10 +161,25 @@ document.getElementById("septima").addEventListener("click", function generate()
     limite=812;
     pokedex(inicio, limite);
 })
+
+document.getElementById("septima_2").addEventListener("click", function generate() {
+    borrar();
+    inicio=722;
+    limite=812;
+    pokedex(inicio, limite);
+});
+
 //------------------------------------OCTAVA GENERACION-----------------------------------
 document.getElementById("octava").addEventListener("click", function generate() {
     borrar();
     inicio=813;
     limite=892;
     pokedex(inicio, limite);
-})
+});
+
+document.getElementById("octava_2").addEventListener("click", function generate() {
+    borrar();
+    inicio=813;
+    limite=892;
+    pokedex(inicio, limite);
+});

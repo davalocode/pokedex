@@ -1,17 +1,49 @@
+/*-------------------BODY (GENERAL)------------------*/
+body {
+    background-color: #0A285F;
+    font-family: 'Pokemon Solid', sans-serif;
+    color: #D5A100;
+}
+
+/*-------------------------LOGO POKEMON-------------*/
+.logo {
+    text-align: center;
+    width: 100%;
+}
+.logo img {
+    width: 10%;
+}
+
+/*-------------------------HEADER----------------------*/
+header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0069aa;
+}
+.hamburger {
+    display: none;
+}
 span {
     cursor: pointer;
 }
+
+/*-----------------------------MAIN CONTAINER---------------*/
 .contenedor {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 1%;
 }
 .contenedor div {
-    width: 25%;
+    margin: 10px;
+    width: 23.9%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: #0075BE;
 }
 
 .contenedor div img {
@@ -20,4 +52,74 @@ span {
 
 .contenedor div p {
     width: 100%;
+}
+
+.contenedor h2 {
+    margin: 0px auto;
+    margin-top: 5%;
+}
+
+.contenedor a {
+    color: #FFCC00;
+    text-decoration: none;
+}
+
+.contenedor div a p:nth-child(3)::first-letter {
+    text-transform: uppercase;
+}
+
+/*----------------------RESPONSIVE---------------------------*/
+/*MOVIl*/
+@media screen and (max-width:600px) {
+    /*-----------LOGO-------------*/
+    .logo img {
+        width: 40%;
+    }
+
+    /*---------------HEADER-------------*/
+    header{
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+
+    /*-----------MAIN CONTAINER------------------*/
+    .contenedor div {
+        width: 44.4%;
+    }
+}
+/*IPAD*/
+@media screen and (max-width:1200px) and (min-width:700px)  {
+
+    .logo img {
+        width: 20%;
+    }
+    .contenedor div {
+        width: 30.8%;
+    }
+}
+
+/*IPAD MIni*/
+@media screen and (max-width:1200px) and (min-width:700px)  {
+
+    .logo img {
+        width: 20%;
+    }
+
+    .contenedor div {
+        width: 30.6%;
+    }
+}
+
+/*ORDENADOR*/
+@media screen and (max-width:1700px) and (min-width:1205px)  {
+
+    .logo img {
+        width: 20%;
+    }
+
+    .contenedor div {
+        width: 23.7%;
+    }
 }
