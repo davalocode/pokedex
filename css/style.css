@@ -53,13 +53,12 @@ span {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #0075BE;
-    opacity: 75%;
+    background-color: #0075bec3;
     transition: all 300ms;
 }
 
 .contenedor div:hover {
-    opacity: 100%;
+    background-color: #0075BE;
     transition: all 300ms;
 }
 

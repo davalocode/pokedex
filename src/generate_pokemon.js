@@ -14,8 +14,6 @@ async function generate() {
 
     let pokemon=dato;
 
-    console.log(dato)
-
     let datos_pokemon=document.createElement("div");
         
         //Creacion de la imagen cara

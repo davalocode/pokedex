@@ -26,7 +26,6 @@ async function pokedex(inicio, limite) {
     dato = await resultado.json();
 
         pokemon=dato;
-        console.log(pokemon)
         let datos_pokemon=document.createElement("div");
         
         //Crear enlace para la pagina
