@@ -22,6 +22,16 @@ header {
     justify-content: space-around;
     background-color: #0069aa;
 }
+
+header span {
+    transition: all 300ms;
+}
+
+header span:hover {
+    transition: all 300ms;
+    margin-bottom: 10px;
+}
+
 .hamburger {
     display: none;
 }
@@ -44,6 +54,13 @@ span {
     justify-content: center;
     text-align: center;
     background-color: #0075BE;
+    opacity: 75%;
+    transition: all 300ms;
+}
+
+.contenedor div:hover {
+    opacity: 100%;
+    transition: all 300ms;
 }
 
 .contenedor div img {

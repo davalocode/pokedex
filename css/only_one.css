@@ -1,0 +1,54 @@
+body {
+    background-color: #0A285F;
+    font-family: 'Pokemon Solid', sans-serif;
+    color: #FFCC00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+#contenedor {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #0075be88;
+    border-radius: 10px;
+}
+#contenedor div p:nth-child(5) {
+    width: 50%;
+    display: inline-block;
+}
+#contenedor div p:nth-child(6) {
+    display: inline-block;
+    width: 50%;
+}
+#contenedor div p:nth-child(7) {
+    display: inline-block;
+    width: 50%;
+}
+
+#contenedor div p:nth-child(8) {
+    display: inline-block;
+    width: 50%;
+}
+
+#contenedor div p:nth-child(9) {
+    display: inline-block;
+    width: 50%;
+}
+
+#contenedor div p:nth-child(10) {
+    display: inline-block;
+    width: 50%;
+}
+#contenedor div p:nth-child(11) {
+    display: inline-block;
+    width: 50%;
+}
+
+#contenedor div p:nth-child(12) {
+    display: inline-block;
+    width: 50%;
+}
+
+
